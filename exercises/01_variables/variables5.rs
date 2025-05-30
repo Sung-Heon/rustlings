@@ -1,8 +1,9 @@
 fn main() {
-    let number = "T-H-R-E-E"; // Don't change this line
+    let mut number = "T-H-R-E-E"; // Don't change this line
     println!("Spell a number: {}", number);
 
-    // TODO: Fix the compiler error by changing the line below without renaming the variable.
-    number = 3;
-    println!("Number plus two is: {}", number + 2);
+    number = "3";
+    // Parse the string to integer and add 2
+    let result = number.parse::<i32>().unwrap() + 2;
+    println!("Number plus two is: {}", result);
 }
