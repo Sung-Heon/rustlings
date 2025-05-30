@@ -1,4 +1,4 @@
 fn main() {
-    // TODO: Fix the code to print "Hello world!".
-    printline!("Hello world!");
+    // 러스트는 println!이게 print다.
+    println!("Hello world!");
 }
